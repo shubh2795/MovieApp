@@ -6,6 +6,7 @@ import MovieListHeading from "./components/MovieListHeading";
 import SearchBox from "./components/SearchBox";
 import AddFavourites from "./components/AddFavourites";
 import RemoveFavourites from "./components/RemoveFavourites";
+import GitHubRating from "./components/GitHubRating";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -78,6 +79,9 @@ const App = () => {
           handleFavouritesClick={removeFavouriteMovie}
           favouriteComponent={RemoveFavourites}
         />
+      </div>
+      <div className="footer-copyright">
+        <GitHubRating></GitHubRating>
       </div>
     </div>
   );
